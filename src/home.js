@@ -6,14 +6,17 @@ export function initialLoad(){
     content.appendChild(home);
 
     const title = document.createElement('h1');
+    title.id = 'title';
     title.textContent = 'Pizzeria da Ciro';
     home.appendChild(title);
 
     const img = document.createElement('img');
-    img.src = '../pizza.jpg';
+    img.id = 'pizzaImg';
+    img.src = '../images/pizza.jpg';
     home.appendChild(img);
 
     const quote = document.createElement('p');
-    quote.textContent = 'Fatte \'na pizza c\'a pummarola \'ncoppa, vedrai che il mondo poi ti sorriderà';
+    quote.id = 'quote';
+    quote.textContent = 'Fatte \'na pizza c\'a pummarola \'ncoppa, vedrai che il mondo poi ti sorriderà - Pino Daniele';
     home.appendChild(quote);
 }
