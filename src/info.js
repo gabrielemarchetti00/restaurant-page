@@ -4,8 +4,7 @@ export function infoLoad() {
     content.appendChild(infoDiv);
 
     const timetable = document.createElement('div');
-    const table = document.createElement('table');
-    table.appendChild(timetable);
+    timetable.textContent = 'Lun-Sab 12:00-24:00';
     infoDiv.appendChild(timetable);
 
     const address = document.createElement('div');
